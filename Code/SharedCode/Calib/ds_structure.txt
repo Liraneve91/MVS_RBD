@@ -1,0 +1,20 @@
+ds folder name: <time_stamp_of_calibration>_<name of ds>
+	e.g. 2020_10_06_14_27_39_yair_liran_and_chessboad 
+	CalibImages folder. OPTIONAL: if decided to save
+		mac0 # mac count - how many devices play
+			port0: # usually 2 ports on each device
+				img01 # from 01 to num images done on calibration
+	calib file # e.g. calib_file_2020_10_27_1devices_2cams_10images
+	ds_<name> folder: # name got nothing to do with detection mode
+		CamClientInput: folder with images recorded
+			mac0:
+				port0: 
+					0.jpg # image take on iteration i==0. unlimited
+		CamClientOutput:
+			detection mode:
+				mac0: 
+					pkl file
+		AlgoClientOutput
+			detection mode:
+				pkl file
+	

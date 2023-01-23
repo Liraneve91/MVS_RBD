@@ -1,0 +1,114 @@
+{
+  "misc_cam": {
+    "local_mode_cfg": {
+      "local_mode": true,
+      "max_iters": 10000,
+      "block_last_iter": true
+    },
+    "use_fake_mac": false ,
+    "use_fake_mac_help": "good if you run cam client on macs not in calib file",
+    "fake_mac": "DC:A6:32:BE:B8:F9",
+    "fake_mac_ops": "calib3 DC:A6:32:B8:1B:90, calib4 DC:A6:32:B8:1B:C6, DC:A6:32:BE:8E:8D",
+    "skip_read_frames": false,
+    "skip_read_frames_help": "reads images from folder",
+    "send_output_data_from_ds": false,
+    "record_output": false,
+    "sleep_between_rounds": 0,
+    "sleep_between_rounds_help": "in seconds. 0 no sleep. if you need to slow down for debugging.",
+    "max_cams_on_device": 2,
+    "max_cams_on_device_help": "when calibrating, RP will try this number of port to open",
+    "show_images": {
+      "cv": {
+        "show": true,
+        "show_help": "show cv frame + detection output",
+        "wait_ms": 1,
+        "wait_ms_help": "0 to block",
+        "x_y": [
+          0,
+          70
+        ],
+        "x_y_help": "location of the cv plot",
+        "resize": 1.0,
+        "resize_help": "resize% of frame size"
+      },
+      "plt": {
+        "show": false,
+        "show_help": "show the data before going back to the server in pyplot",
+        "plot_window_location": "bottom_left",
+        "resize": 0.8,
+        "x_y_limits": {
+          "x_start": 0,
+          "x_end": 640,
+          "y_start": 0,
+          "y_end": 480
+        },
+        "image_plot_x_y_limits_help": "plot box - valid if image_plot=True"
+      }
+    }
+  },
+  "calib_params": {
+    "calib_root": "./Clients/CamClient/CalibImages",
+    "calib_root_help": "save the images locally here",
+    "show_image": true,
+    "show_image_time": 1000,
+    "show_image_time_help": "0 to block, Don't close the window. focus on it and click any key"
+  },
+  "detector_params": {
+    "chessboard": {
+      "with_colors": true,
+      "pattern_size_x": 6,
+      "pattern_size_y": 9,
+      "pattern_size_ops": "small cehssboard x=6, y=9. big cehssboard x=6, y=5"
+    },
+    
+    "colors": {
+      "boundaries_bgr": {
+        "red": {
+          "low": [
+            17,
+            15,
+            100
+          ],
+          "high": [
+            105,
+            75,
+            180
+          ]
+        },
+        "blue": {
+          "low": [
+            86,
+            31,
+            4
+          ],
+          "high": [
+            220,
+            88,
+            25
+          ]
+        }
+      }
+    },
+    "motion": {
+      "backgrounds_folder": "empty_lab_backgrounds",
+      "backgrounds_folder_help": "relative to calibration folder",
+      "min_area": 1000,
+      "gaus_dict": {
+        "ksize": [
+          21,
+          21
+        ],
+        "sigmaX": 1
+      },
+      "thresh_dict": {
+        "thresh": 75
+      },
+      "dilate_dict": {
+        "kernel": null,
+        "iterations": 10
+      },
+      "padding": 0,
+      "show_bases": false
+    }
+  }
+}

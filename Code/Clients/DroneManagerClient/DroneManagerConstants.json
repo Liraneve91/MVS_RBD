@@ -1,0 +1,12 @@
+{
+  "misc_out": {
+    "local_mode_cfg": {
+      "local_mode": false,
+      "max_iters": 10,
+      "block_last_iter": true,
+      "max_rps": 4
+    }
+  },
+  "my_params": {
+  }
+}

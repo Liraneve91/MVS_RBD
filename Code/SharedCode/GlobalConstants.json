@@ -1,0 +1,26 @@
+{
+  "misc_global": {
+    "system_mode": "calibration",
+    "system_mode_help": "mapping, calibration, recording_ds",
+    "debug_mode": true,
+    "calib_folder": "2022_02_20_14_37_41",
+    "calib_ds": "ds_chessboard_single_h",
+    "detection_mode": "drone2",
+    "calib_folder_optionX": "2021_10_18_15_49_39",
+    "calib_ds_options": "OPS: ds_chessboard",
+    "detection_mode_options1": "chessboard, blobs",
+    "detection_mode_options2": "colors, motion, drone, drone2",
+    "buflen": 512,
+    "float_precision": 10,
+    "port": 27015,
+    "end_message_suffix": "$#$#",
+    "end_message_suffix_help": "supporting unknown size of messages. this is the fastest solution",
+    "mac_port_delimiter": "/",
+    "mac_port_delimiter_help": "the delimiter used to separate mac port. i.e. DC:A6:32:B8:1B:90/1"
+  },
+  "errors": {
+    "bad_msg": "data received with wrong key",
+    "no_data": "No data received"
+  }
+}
+

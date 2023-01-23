@@ -1,0 +1,73 @@
+{
+  "misc_vis": {
+    "local_mode_cfg": {
+      "local_mode": false,
+      "max_iters": 10,
+      "block_last_iter": true,
+      "max_rps": 4
+    },
+    "face_color": "white",
+    "label_color": "red",
+    "block_post_init": false,
+    "block_post_init_help": "block after init plot (NO data)",
+    "block_post_iter": false,
+    "block_post_iter_help": "blocks after each data drawing",
+    "3d_plot_window_location": "bottom_right",
+    "3d_plot_window_location_options": "top_right, top_center, top_left, bottom_right, bottom_center, bottom_left",
+    "view": "cameras_to_object",
+    "view_option": "cameras_to_object, object_to_cameras, top",
+    "world_size": {
+      "help": "size of the world (cube dimensions. e.g. if -100 to 100: cube with edge 200)",
+      "bottom": -20,
+      "top": 20
+    },
+    "cube": {
+      "help": "add a cube around origin",
+      "add_cube": false,
+      "color": "blue",
+      "edge_len": 20,
+      "cube_len_help": "edge size",
+      "add_corners_labels": false
+    }
+  },
+  "algo_data_scatter": {
+    "help": "x 3d points coming at iteration i",
+    "color": "black",
+    "label": "MVS",
+    "marker_size": 5,
+    "arrows": {
+      "show": false,
+      "c": "b",
+      "len": 10
+    }
+  },
+  "center_mass_label": {
+    "help": "center of mass point",
+    "show_label": true,
+    "x1": 0.05,
+    "y1": 0.95,
+    "label_base": "(xyz)={}"
+  },
+  "cams_scatter": {
+    "ground_cam_color": "b",
+    "other_cams_color": "r",
+    "draw_other_ids": true,
+    "draw_other_ids_help": "each cam has color and label. other_cams_color and ground_cam_color ignored",
+    "marker_size": 30,
+    "ground_cam_label": "GroundCam",
+    "arrows": {
+      "with_arrows": true,
+      "length": 5,
+      "color": "red"
+    },
+    "pyramids": {
+      "with_pyramids": true,
+      "color": "g",
+      "dist": 3,
+      "height": 400,
+      "width": 400,
+      "help": "width and length cant exceed frame size(calib issue)",
+      "help2": "400, 400 works on all 3 ds(chess, yairLiran and orel)"
+    }
+  }
+}

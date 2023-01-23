@@ -1,0 +1,80 @@
+{
+  "misc_algo": {
+    "local_mode_cfg": {
+      "local_mode": false,
+      "max_iters": 10,
+      "rps_playing": 3,
+      "rps_playing_help": "take first 'rps_playing' from calib file"
+    },
+    "send_output_data_from_ds": false,
+    "record_output": false,
+    "record_output_help": "saves in current folder. move it when finishing recording",
+    "with_lines": false,
+    "with_lines_help": "usually for debug. send lines from algo"
+  },
+  "misc_algo_detectors": {
+    "motion": {
+      "match_threshold": 0.25,
+      "show_match": false
+    }
+  },
+  "kmeans": {
+    "run_type_options": "exhaustive, random, 1_mean_acc",
+    "noise_filter_size_help": "For now valid only for k==1",
+    "chessboard": {
+      "K": 1,
+      "run_type": "1_mean_acc",
+      "t": null,
+      "use_cam_pos_filter": false,
+      "use_in_range_filter": false,
+      "use_unique_points_filter": false,
+      "use_noise_filter": false,
+      "in_range_values": null,
+      "noise_filter_size": null
+    },
+    "colors": {
+      "K": 1,
+      "run_type": "1_mean_acc",
+      "t": null,
+      "use_cam_pos_filter": false,
+      "use_in_range_filter": false,
+      "use_unique_points_filter": false,
+      "use_noise_filter": false,
+      "in_range_values": null,
+      "noise_filter_size": null
+    },
+    "motion": {
+      "K": 1,
+      "run_type": "1_mean_acc",
+      "t": null,
+      "use_cam_pos_filter": false,
+      "use_in_range_filter": false,
+      "use_unique_points_filter": false,
+      "use_noise_filter": false,
+      "in_range_values": null,
+      "noise_filter_size": null
+    },
+    "drone": {
+      "K": 1,
+      "run_type": "1_mean_acc",
+      "t": null,
+      "use_cam_pos_filter": false,
+      "use_in_range_filter": false,
+      "use_unique_points_filter": false,
+      "use_noise_filter": false,
+      "in_range_values": null,
+      "noise_filter_size": null
+    },
+    "drone2": {
+      "K": 1,
+      "run_type": "1_mean_acc",
+      "t": null,
+      "use_cam_pos_filter": false,
+      "use_in_range_filter": false,
+      "use_unique_points_filter": false,
+      "use_noise_filter": false,
+      "in_range_values": null,
+      "noise_filter_size": null
+    }
+  }
+}

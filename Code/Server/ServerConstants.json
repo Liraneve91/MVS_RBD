@@ -1,0 +1,69 @@
+{
+  "misc_server": {
+    "custom_t": {
+      "ues_custom_t": false,
+      "t_start": 0,
+      "t_end": 360
+    },
+    "t_start_end_help": "t goes from start to end cyclic",
+    "t_start_end_help2": "t_start=t_end: use only 1 image",
+    "t_start_end_help3": "t_start=100, t_end=102: use 100,101,102 cyclic"
+  },
+  "agents_meta_data": [
+    {
+      "name": "CamClient",
+      "devices": 2,
+      "devices_help": "number of devices - NOT cameras. each device can have many cams",
+      "active": true
+    },
+    {
+      "name": "AlgoClient",
+      "active": true
+    },
+    {
+      "name": "VisClientPyPlot",
+      "active": true
+    },
+    {
+      "name": "OutClient",
+      "active": false
+    },
+    {
+      "name": "DroneManagerClient",
+      "active": true
+    }
+  ],
+  "ds_recording": {
+    "save_to": "SharedCode/drone_ds",
+    "save_to_help": "replace new_ds with name(you can do it after the run)",
+    "iterations": 300,
+    "show_imgs_server_side": false,
+    "show_imgs_server_side_ms": 0
+  },
+  "calibration": {
+    "data_root_base": "SharedCode/Calib",
+    "part1": {
+      "timer": 0,
+      "timer_help": "counts till `timer` and sends to cams take img. null for block",
+      "iterations": 500,
+      "show_imgs_server_side": false,
+      "show_imgs_server_side_ms": 0,
+      "show_imgs_server_side_ms_help": "time in ms. 0 for block"
+    },
+    "part2": {
+      "show_views_graph": true,
+      "show_views_graph_help": "show cams graph",
+      "show_plot": true,
+      "show_plot_help": "display cam pos in 3d plot",
+      "show_corners": false,
+      "show_corners_help": "display chessboard corners on images while detecting",
+      "data_folder": "INSERT CALIB FOLDER e.g. 2020_11_19_13_26_59_calib3",
+      "data_folder_help": "valid if CamClient active is False",
+      "data_folder_help2": "used for calibrating with CalibImages pre recorded",
+      "square_size": 6,
+      "squares_num_width": 9,
+      "squares_num_height": 6,
+      "square_options": "calib3 24,9,6, calib >=4 80,6,5"
+    }
+  }
+}
